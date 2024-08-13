@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+            padding: 5px;
+            margin: 10px;
+            width: 10%;
+            background-color: rgb(185, 127, 238);
+            transition: width 8s;
+        }
+        
+        .a1 {
+            transition: linear;
+        }
+        
+        .a2 {
+            transition: ease;
+        }
+        
+        .a3 {
+            transition: ease-in;
+        }
+        
+        .a4 {
+            transition: ease-out;
+        }
+        
+        .a5 {
+            transition: ease-in-out;
+        }
+        
+        div:hover {
+            background-color: aquamarine;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a1">Linear</div>
+    <div class="a2">Ease</div>
+    <div class="a3">Ease in</div>
+    <div class="a4">Ease out</div>
+    <div class="a5">Ease in out</div>
+
+</body>
+
+</html>
