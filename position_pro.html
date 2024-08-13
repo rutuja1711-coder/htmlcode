@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 1000%;
+            width: 1000%;
+            background-color: rgb(31, 225, 160);
+        }
+        
+        #a1 {
+            background-color: rgb(110, 169, 169);
+            border: 1px solid black;
+            padding: 5px;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: static;
+        }
+        
+        #a2 {
+            background-color: rgb(110, 169, 169);
+            border: 1px solid black;
+            padding: 5px;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: relative;
+            top: 80px;
+            left: 100px;
+        }
+        
+        #a3 {
+            background-color: rgb(110, 169, 169);
+            border: 1px solid black;
+            padding: 5px;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: absolute;
+            top: 150px;
+        }
+        
+        #a4 {
+            background-color: rgb(110, 169, 169);
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            position: sticky;
+            left: 300px;
+        }
+        
+        #a5 {
+            background-color: rgb(110, 169, 169);
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            position: fixed;
+            right: 5px;
+            bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="a" id="a1">Static Property</div>
+        <div class="a" id="a2">Relative Property</div>
+        <div class="a" id="a3">Absolute Property</div>
+        <div class="a" id="a4">sticky Property</div>
+        <div class="a" id="a5">Fixed Property</div>
+    </div>
+</body>
+
+</html>
